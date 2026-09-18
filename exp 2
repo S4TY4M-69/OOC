@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class Complex
+{
+    int real, imag;
+
+public:
+    void getData()
+    {
+        cout << "Enter real part: ";
+        cin >> real;
+
+        cout << "Enter imaginary part: ";
+        cin >> imag;
+    }
+
+    void display()
+    {
+        cout << "Complex number = " << real << " + " << imag << "i";
+    }
+};
+
+int main()
+{
+    Complex c;
+
+    c.getData();
+    c.display();
+
+    return 0;
+}
